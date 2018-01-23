@@ -34,9 +34,8 @@ abstract class AbstractUriElement
     protected $currentUri;
 
     /**
-     * @param \DOMElement $node       A \DOMElement instance
-     * @param string      $currentUri The URI of the page where the link is embedded (or the base href)
-     * @param string      $method     The method to use for the link (GET by default)
+     * @param string $currentUri The URI of the page where the link is embedded (or the base href)
+     * @param string $method     The method to use for the link (GET by default)
      *
      * @throws \InvalidArgumentException if the node is not a link
      */
@@ -159,8 +158,6 @@ abstract class AbstractUriElement
 
     /**
      * Sets current \DOMElement instance.
-     *
-     * @param \DOMElement $node A \DOMElement instance
      *
      * @throws \LogicException If given node is not an anchor
      */

@@ -274,8 +274,6 @@ class RequestContext
     /**
      * Sets the parameters.
      *
-     * @param array $parameters The parameters
-     *
      * @return $this
      */
     public function setParameters(array $parameters)

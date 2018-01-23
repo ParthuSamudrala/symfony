@@ -37,8 +37,7 @@ class PercentToLocalizedStringTransformer implements DataTransformerInterface
     /**
      * @see self::$types for a list of supported types
      *
-     * @param int    $scale The scale
-     * @param string $type  One of the supported types
+     * @param string $type One of the supported types
      *
      * @throws UnexpectedTypeException if the given value of type is unknown
      */

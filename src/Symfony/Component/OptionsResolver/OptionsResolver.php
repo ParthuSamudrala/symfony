@@ -368,8 +368,7 @@ class OptionsResolver implements Options
      *
      * The resolved option value is set to the return value of the closure.
      *
-     * @param string   $option     The option name
-     * @param \Closure $normalizer The normalizer
+     * @param string $option The option name
      *
      * @return $this
      *
@@ -871,7 +870,6 @@ class OptionsResolver implements Options
     /**
      * @param string $type
      * @param mixed  $value
-     * @param array  &$invalidTypes
      *
      * @return bool
      */
@@ -975,7 +973,7 @@ class OptionsResolver implements Options
      * parameters should usually not be included in messages aimed at
      * non-technical people.
      *
-     * @param mixed  $value The value to return the type of
+     * @param mixed $value The value to return the type of
      */
     private function formatTypeOf($value, ?string $type): string
     {

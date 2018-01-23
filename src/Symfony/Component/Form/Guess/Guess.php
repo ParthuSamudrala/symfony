@@ -80,7 +80,6 @@ abstract class Guess
     }
 
     /**
-     * @param int $confidence The confidence
      *
      * @throws InvalidArgumentException if the given value of confidence is unknown
      */

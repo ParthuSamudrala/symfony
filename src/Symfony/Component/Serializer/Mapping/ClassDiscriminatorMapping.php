@@ -41,8 +41,6 @@ class ClassDiscriminatorMapping
 
     /**
      * @param object|string $object
-     *
-     * @return string|null
      */
     public function getMappedObjectType($object): ?string
     {

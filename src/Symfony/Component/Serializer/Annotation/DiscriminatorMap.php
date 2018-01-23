@@ -34,7 +34,6 @@ class DiscriminatorMap
     private $mapping;
 
     /**
-     * @param array $data
      *
      * @throws InvalidArgumentException
      */

@@ -69,9 +69,6 @@ class ParentDummy
     {
     }
 
-    /**
-     * @param \DateTime $f
-     */
     public function removeF(\DateTime $f)
     {
     }

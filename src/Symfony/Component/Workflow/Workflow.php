@@ -201,9 +201,7 @@ class Workflow implements WorkflowInterface
     }
 
     /**
-     * @param object     $subject
-     * @param Marking    $marking
-     * @param Transition $transition
+     * @param object $subject
      *
      * @return bool|void boolean true if this transition is guarded, ie you cannot use it
      */

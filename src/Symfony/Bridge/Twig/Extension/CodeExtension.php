@@ -29,7 +29,6 @@ class CodeExtension extends AbstractExtension
     /**
      * @param string|FileLinkFormatter $fileLinkFormat The format for links to source files
      * @param string                   $rootDir        The project root directory
-     * @param string                   $charset        The charset
      */
     public function __construct($fileLinkFormat, string $rootDir, string $charset)
     {

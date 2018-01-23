@@ -24,11 +24,6 @@ class DependencyInjectionExtension implements FormExtensionInterface
     private $typeExtensionServices;
     private $guesserServices;
 
-    /**
-     * @param ContainerInterface $typeContainer
-     * @param iterable[]         $typeExtensionServices
-     * @param iterable           $guesserServices
-     */
     public function __construct(ContainerInterface $typeContainer, array $typeExtensionServices, iterable $guesserServices)
     {
         $this->typeContainer = $typeContainer;

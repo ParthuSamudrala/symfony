@@ -19,11 +19,10 @@ namespace Symfony\Component\Config\Exception;
 class FileLoaderLoadException extends \Exception
 {
     /**
-     * @param string     $resource       The resource that could not be imported
-     * @param string     $sourceResource The original resource importing the new resource
-     * @param int        $code           The error code
-     * @param \Exception $previous       A previous exception
-     * @param string     $type           The type of resource
+     * @param string $resource       The resource that could not be imported
+     * @param string $sourceResource The original resource importing the new resource
+     * @param int    $code           The error code
+     * @param string $type           The type of resource
      */
     public function __construct(string $resource, string $sourceResource = null, int $code = null, \Exception $previous = null, string $type = null)
     {

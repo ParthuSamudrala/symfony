@@ -222,8 +222,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
     /**
      * Forwards the Request to the backend without storing the Response in the cache.
      *
-     * @param Request $request A Request instance
-     * @param bool    $catch   Whether to process exceptions
+     * @param bool $catch Whether to process exceptions
      *
      * @return Response A Response instance
      */
@@ -237,8 +236,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
     /**
      * Invalidates non-safe methods (like POST, PUT, and DELETE).
      *
-     * @param Request $request A Request instance
-     * @param bool    $catch   Whether to process exceptions
+     * @param bool $catch Whether to process exceptions
      *
      * @return Response A Response instance
      *
@@ -286,8 +284,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      * the backend using conditional GET. When no matching cache entry is found,
      * it triggers "miss" processing.
      *
-     * @param Request $request A Request instance
-     * @param bool    $catch   Whether to process exceptions
+     * @param bool $catch Whether to process exceptions
      *
      * @return Response A Response instance
      *
@@ -332,9 +329,8 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      * The original request is used as a template for a conditional
      * GET request with the backend.
      *
-     * @param Request  $request A Request instance
-     * @param Response $entry   A Response instance to validate
-     * @param bool     $catch   Whether to process exceptions
+     * @param Response $entry A Response instance to validate
+     * @param bool     $catch Whether to process exceptions
      *
      * @return Response A Response instance
      */
@@ -395,8 +391,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      * Unconditionally fetches a fresh response from the backend and
      * stores it in the cache if is cacheable.
      *
-     * @param Request $request A Request instance
-     * @param bool    $catch   Whether to process exceptions
+     * @param bool $catch Whether to process exceptions
      *
      * @return Response A Response instance
      */
@@ -428,9 +423,8 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      * All backend requests (cache passes, fetches, cache validations)
      * run through this method.
      *
-     * @param Request  $request A Request instance
-     * @param bool     $catch   Whether to catch exceptions or not
-     * @param Response $entry   A Response instance (the stale entry if present, null otherwise)
+     * @param bool     $catch Whether to catch exceptions or not
+     * @param Response $entry A Response instance (the stale entry if present, null otherwise)
      *
      * @return Response A Response instance
      */

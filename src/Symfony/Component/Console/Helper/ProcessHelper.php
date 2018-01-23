@@ -26,7 +26,6 @@ class ProcessHelper extends Helper
     /**
      * Runs an external process.
      *
-     * @param OutputInterface      $output    An OutputInterface instance
      * @param string|array|Process $cmd       An instance of Process or an array of arguments to escape and run or a command to run
      * @param string|null          $error     An error message that must be displayed if something went wrong
      * @param callable|null        $callback  A PHP callback to run whenever there is some
@@ -77,11 +76,10 @@ class ProcessHelper extends Helper
      * This is identical to run() except that an exception is thrown if the process
      * exits with a non-zero exit code.
      *
-     * @param OutputInterface $output   An OutputInterface instance
-     * @param string|Process  $cmd      An instance of Process or a command to run
-     * @param string|null     $error    An error message that must be displayed if something went wrong
-     * @param callable|null   $callback A PHP callback to run whenever there is some
-     *                                  output available on STDOUT or STDERR
+     * @param string|Process $cmd      An instance of Process or a command to run
+     * @param string|null    $error    An error message that must be displayed if something went wrong
+     * @param callable|null  $callback A PHP callback to run whenever there is some
+     *                                 output available on STDOUT or STDERR
      *
      * @return Process The process that ran
      *
@@ -104,7 +102,6 @@ class ProcessHelper extends Helper
      * Wraps a Process callback to add debugging output.
      *
      * @param OutputInterface $output   An OutputInterface interface
-     * @param Process         $process  The Process
      * @param callable|null   $callback A PHP callable
      *
      * @return callable

@@ -47,8 +47,7 @@ final class ProgressBar
     private static $formats;
 
     /**
-     * @param OutputInterface $output An OutputInterface instance
-     * @param int             $max    Maximum steps (0 if unknown)
+     * @param int $max Maximum steps (0 if unknown)
      */
     public function __construct(OutputInterface $output, int $max = 0)
     {
@@ -109,8 +108,7 @@ final class ProgressBar
      *
      * This method also allow you to override an existing format.
      *
-     * @param string $name   The format name
-     * @param string $format A format string
+     * @param string $name The format name
      */
     public static function setFormatDefinition(string $name, string $format): void
     {

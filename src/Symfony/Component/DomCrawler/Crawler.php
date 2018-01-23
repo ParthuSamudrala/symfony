@@ -266,8 +266,6 @@ class Crawler implements \Countable, \IteratorAggregate
 
     /**
      * Adds a \DOMDocument to the list of nodes.
-     *
-     * @param \DOMDocument $dom A \DOMDocument instance
      */
     public function addDocument(\DOMDocument $dom)
     {
@@ -278,8 +276,6 @@ class Crawler implements \Countable, \IteratorAggregate
 
     /**
      * Adds a \DOMNodeList to the list of nodes.
-     *
-     * @param \DOMNodeList $nodes A \DOMNodeList instance
      */
     public function addNodeList(\DOMNodeList $nodes)
     {
@@ -304,8 +300,6 @@ class Crawler implements \Countable, \IteratorAggregate
 
     /**
      * Adds a \DOMNode instance to the list of nodes.
-     *
-     * @param \DOMNode $node A \DOMNode instance
      */
     public function addNode(\DOMNode $node)
     {

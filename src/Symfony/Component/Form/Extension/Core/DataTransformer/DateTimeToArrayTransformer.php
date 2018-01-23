@@ -26,10 +26,8 @@ class DateTimeToArrayTransformer extends BaseDateTimeTransformer
     private $fields;
 
     /**
-     * @param string $inputTimezone  The input timezone
-     * @param string $outputTimezone The output timezone
-     * @param array  $fields         The date fields
-     * @param bool   $pad            Whether to use padding
+     * @param array $fields The date fields
+     * @param bool  $pad    Whether to use padding
      */
     public function __construct(string $inputTimezone = null, string $outputTimezone = null, array $fields = null, bool $pad = false)
     {

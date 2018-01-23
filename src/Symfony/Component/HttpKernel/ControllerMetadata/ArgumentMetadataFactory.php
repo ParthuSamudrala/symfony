@@ -43,8 +43,6 @@ final class ArgumentMetadataFactory implements ArgumentMetadataFactoryInterface
     /**
      * Returns an associated type to the given parameter if available.
      *
-     * @param \ReflectionParameter $parameter
-     *
      * @return null|string
      */
     private function getType(\ReflectionParameter $parameter)

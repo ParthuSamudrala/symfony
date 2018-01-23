@@ -22,9 +22,7 @@ class CustomAuthenticationSuccessHandler implements AuthenticationSuccessHandler
     private $handler;
 
     /**
-     * @param AuthenticationSuccessHandlerInterface $handler     An AuthenticationSuccessHandlerInterface instance
-     * @param array                                 $options     Options for processing a successful authentication attempt
-     * @param string                                $providerKey The provider key
+     * @param array $options Options for processing a successful authentication attempt
      */
     public function __construct(AuthenticationSuccessHandlerInterface $handler, array $options, string $providerKey)
     {

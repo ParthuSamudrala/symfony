@@ -93,8 +93,6 @@ class EventDataCollector extends DataCollector implements LateDataCollectorInter
     /**
      * Sets the not called listeners.
      *
-     * @param array $listeners
-     *
      * @see TraceableEventDispatcher
      */
     public function setNotCalledListeners(array $listeners)

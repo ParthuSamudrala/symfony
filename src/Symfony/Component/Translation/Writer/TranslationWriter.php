@@ -28,8 +28,7 @@ class TranslationWriter implements TranslationWriterInterface
     /**
      * Adds a dumper to the writer.
      *
-     * @param string          $format The format of the dumper
-     * @param DumperInterface $dumper The dumper
+     * @param string $format The format of the dumper
      */
     public function addDumper($format, DumperInterface $dumper)
     {

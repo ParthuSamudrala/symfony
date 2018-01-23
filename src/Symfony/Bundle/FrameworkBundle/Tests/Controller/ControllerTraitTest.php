@@ -98,7 +98,6 @@ abstract class ControllerTraitTest extends TestCase
     }
 
     /**
-     * @param $token
      *
      * @return Container
      */

@@ -22,7 +22,6 @@ class UriSigner
     private $parameter;
 
     /**
-     * @param string $secret    A secret
      * @param string $parameter Query string parameter to use
      */
     public function __construct(string $secret, string $parameter = '_hash')

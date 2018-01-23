@@ -360,8 +360,6 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
      * @param bool|string $trackContents Whether to track contents of the given resource. If a string is passed,
      *                                   it will be used as pattern for tracking contents of the requested directory
      *
-     * @return bool
-     *
      * @final
      */
     public function fileExists(string $path, $trackContents = true): bool
@@ -418,9 +416,8 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
     /**
      * Adds a compiler pass.
      *
-     * @param CompilerPassInterface $pass     A compiler pass
-     * @param string                $type     The type of compiler pass
-     * @param int                   $priority Used to sort the passes
+     * @param string $type     The type of compiler pass
+     * @param int    $priority Used to sort the passes
      *
      * @return $this
      */
@@ -861,8 +858,7 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
      * This methods allows for simple registration of service definition
      * with a fluid interface.
      *
-     * @param string $id         The service identifier
-     * @param string $class|null The service class
+     * @param string $id The service identifier
      *
      * @return Definition A Definition instance
      */
@@ -923,8 +919,7 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
     /**
      * Sets a service definition.
      *
-     * @param string     $id         The service identifier
-     * @param Definition $definition A Definition instance
+     * @param string $id The service identifier
      *
      * @return Definition the service definition
      *
@@ -1507,7 +1502,6 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
     /**
      * Shares a given service in the container.
      *
-     * @param Definition  $definition
      * @param object      $service
      * @param string|null $id
      */

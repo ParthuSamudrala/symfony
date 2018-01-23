@@ -24,7 +24,6 @@ class Registry
     private $workflows = array();
 
     /**
-     * @param Workflow                 $workflow
      * @param SupportStrategyInterface $supportStrategy
      *
      * @deprecated since Symfony 4.1, to be removed in 5.0. Use addWorkflow() instead.

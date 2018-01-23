@@ -33,9 +33,8 @@ class RetryTillSaveStore implements StoreInterface, LoggerAwareInterface
     private $retryCount;
 
     /**
-     * @param StoreInterface $decorated  The decorated StoreInterface
-     * @param int            $retrySleep Duration in ms between 2 retry
-     * @param int            $retryCount Maximum amount of retry
+     * @param int $retrySleep Duration in ms between 2 retry
+     * @param int $retryCount Maximum amount of retry
      */
     public function __construct(StoreInterface $decorated, int $retrySleep = 100, int $retryCount = PHP_INT_MAX)
     {

@@ -125,8 +125,6 @@ class ProjectServiceContainer extends Container
     /**
      * Computes a dynamic parameter.
      *
-     * @param string The name of the dynamic parameter to load
-     *
      * @return mixed The value of the dynamic parameter
      *
      * @throws InvalidArgumentException When the dynamic parameter does not exist

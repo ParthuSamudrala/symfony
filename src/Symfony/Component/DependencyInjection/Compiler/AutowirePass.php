@@ -119,8 +119,6 @@ class AutowirePass extends AbstractRecursivePass
     }
 
     /**
-     * @param \ReflectionClass $reflectionClass
-     * @param array            $methodCalls
      *
      * @return array
      */
@@ -147,8 +145,6 @@ class AutowirePass extends AbstractRecursivePass
 
     /**
      * Autowires the constructor or a method.
-     *
-     * @return array The autowired arguments
      *
      * @throws AutowiringFailedException
      */

@@ -45,8 +45,6 @@ abstract class FileDumper implements DumperInterface
     /**
      * Sets backup flag.
      *
-     * @param bool
-     *
      * @deprecated since Symfony 4.1, to be removed in 5.0
      */
     public function setBackup($backup)
@@ -84,9 +82,7 @@ abstract class FileDumper implements DumperInterface
     /**
      * Transforms a domain of a message catalogue to its string representation.
      *
-     * @param MessageCatalogue $messages
-     * @param string           $domain
-     * @param array            $options
+     * @param string $domain
      *
      * @return string representation
      */

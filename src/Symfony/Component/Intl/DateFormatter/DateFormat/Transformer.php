@@ -23,7 +23,6 @@ abstract class Transformer
     /**
      * Format a value using a configured DateTime as date/time source.
      *
-     *
      * @param \DateTime $dateTime A DateTime object to be used to generate the formatted value
      * @param int       $length   The formatted value string length
      *
@@ -46,8 +45,6 @@ abstract class Transformer
      *
      * @param string $matched The matched value
      * @param int    $length  The length of the Transformer pattern string
-     *
-     * @return array An associative array
      */
     abstract public function extractDateOptions(string $matched, int $length): array;
 

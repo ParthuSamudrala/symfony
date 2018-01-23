@@ -80,8 +80,6 @@ class ClassNotFoundFatalErrorHandler implements FatalErrorHandlerInterface
      * autoloader (that should cover all common cases).
      *
      * @param string $class A class name (without its namespace)
-     *
-     * @return array An array of possible fully qualified class names
      */
     private function getClassCandidates(string $class): array
     {

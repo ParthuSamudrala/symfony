@@ -243,8 +243,6 @@ class Route implements \Serializable
      *
      * This method implements a fluent interface.
      *
-     * @param array $options The options
-     *
      * @return $this
      */
     public function setOptions(array $options)
@@ -260,8 +258,6 @@ class Route implements \Serializable
      * Adds options.
      *
      * This method implements a fluent interface.
-     *
-     * @param array $options The options
      *
      * @return $this
      */
@@ -332,8 +328,6 @@ class Route implements \Serializable
      *
      * This method implements a fluent interface.
      *
-     * @param array $defaults The defaults
-     *
      * @return $this
      */
     public function setDefaults(array $defaults)
@@ -347,8 +341,6 @@ class Route implements \Serializable
      * Adds defaults.
      *
      * This method implements a fluent interface.
-     *
-     * @param array $defaults The defaults
      *
      * @return $this
      */
@@ -417,8 +409,6 @@ class Route implements \Serializable
      *
      * This method implements a fluent interface.
      *
-     * @param array $requirements The requirements
-     *
      * @return $this
      */
     public function setRequirements(array $requirements)
@@ -432,8 +422,6 @@ class Route implements \Serializable
      * Adds requirements.
      *
      * This method implements a fluent interface.
-     *
-     * @param array $requirements The requirements
      *
      * @return $this
      */

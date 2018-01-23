@@ -73,7 +73,6 @@ class XliffFileLoader implements LoaderInterface
      *
      * @param \DOMDocument     $dom       Source to extract messages and metadata
      * @param MessageCatalogue $catalogue Catalogue where we'll collect messages and metadata
-     * @param string           $domain    The domain
      */
     private function extractXliff1(\DOMDocument $dom, MessageCatalogue $catalogue, string $domain)
     {
